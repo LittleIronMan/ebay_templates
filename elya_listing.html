@@ -194,66 +194,18 @@
     }
     ul#SuperThumbs li {
         float: left;
-        background: #ffffff;
-        /*border: 1px solid #cccccc;*/
-        /*margin: 0px 0px 10px 10px;*/
-        /*padding: 8px;*/
-        width: 50%;
+        box-sizing: border-box;
         padding: 3px;
-        /*-moz-border-radius: 10px;*/
-        /*border-radius: 10px;*/
+        width: 25%;
+        height: 150px;
     }
-    ul#SuperThumbs a {
-        float: left;
-        display: block;
-        /*width: 150px;
-        height: 150px;*/
-        /*width: 200px;*/
-        /*width: 100%;*/
-        /*height: 100%;*/
-        /*line-height: 100px;*/
+    ul#SuperThumbs li div {
+        width: 100%;
+        height: 100%;
         overflow: hidden;
-        position: relative;
-        z-index: 1;
-    }
-    ul#SuperThumbs a img {
-        float: left;
-        /*width: 50%;*/
-        /*height: 50%;*/
-        border: 0px;
-    }
-    /* sub images > mouse over */
-    ul#SuperThumbs a:hover {
-        overflow: visible;
-        z-index: 1000;
-        border: none;
-    }
-    ul#SuperThumbs a:hover img {
-        background: #ffffff;
-        /*border: 1px solid #cccccc;*/
-        /*padding: 10px;*/
-        /*-moz-border-radius: 10px;*/
-        /*border-radius: 10px;*/
-        position: absolute;
-        top:-20px;
-        left:-50px;
-        width: auto;
-        height: auto;
-    }
-    /* sub images > clearing floats */
-    ul#SuperThumbs:after, li#SuperThumbs:after {
-        content: ".";
-        display: block;
-        height: 0;
-        clear: both;
-        visibility: hidden;
-    }
-    ul#SuperThumbs, li#SuperThumbs {
-        display: block;
-        min-height: 1%;
-    }
-    * html ul#SuperThumbs, * html li#SuperThumbs {
-        height: 1%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
     }
 
 </style>
@@ -291,15 +243,14 @@
                 <p></p>
                 <ul id="SuperThumbs">
                     <!-- Place your first set of thumbnails here -->
-                    <li><a href="#"><img src="img_x0.5/img_10.webp" /></a></li>
-                    <li><a href="#"><img src="img_x0.5/img_11.webp" /></a></li>
-                    <li><a href="#"><img src="img_x0.5/img_12.webp" /></a></li>
-                    <li><a href="#"><img src="img_x0.5/img_13.webp" /></a></li>
-                    <li><a href="#"><img src="img_x0.5/img_14.webp" /></a></li>
-                    <li><a href="#"><img src="img_x0.5/img_15.webp" /></a></li>
-                    <li><a href="#"><img src="img_x0.5/img_16.webp" /></a></li>
-                    <li><a href="#"><img src="img_x0.5/img_17.webp" /></a></li>
-                    <!-- Place your first set of thumbnails here -->
+                    <li><div href="#" style="background-image: url('img_x0.5/img_10.webp');"/></li>
+                    <li><div href="#" style="background-image: url('img_x0.5/img_11.webp');"/></li>
+                    <li><div href="#" style="background-image: url('img_x0.5/img_12.webp');"/></li>
+                    <li><div href="#" style="background-image: url('img_x0.5/img_13.webp');"/></li>
+                    <li><div href="#" style="background-image: url('img_x0.5/img_14.webp');"/></li>
+                    <li><div href="#" style="background-image: url('img_x0.5/img_15.webp');"/></li>
+                    <li><div href="#" style="background-image: url('img_x0.5/img_16.webp');"/></li>
+                    <li><div href="#" style="background-image: url('img_x0.5/img_17.webp');"/></li>
                 </ul>
                 <p></p>
                 <p>You may even add more contents here, perhaps some notes about actual product might be different than what is shown above.</p>
