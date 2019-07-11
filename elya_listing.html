@@ -23,7 +23,7 @@
     }
     #SuperWrapper h1 {
         /*padding: 5px 0px 15px 0px;*/
-        margin-top: -5px;
+        margin-top: -15px;
         margin-bottom: 0px;
         font-size: 40px;
         font-weight: bold;
@@ -41,8 +41,9 @@
     }
     #SuperHeader {
         width:800px;
-        height: 240px;
-        background-image:url("https://d.radikal.ru/d26/1907/5b/4236612afa3b.jpg");
+        height: 400px;
+        background-image:url("new_img/title2.jpg");
+        background-size: cover;
     }
     #SuperHeaderLogo {
         padding: 25px 0px 83px 80px;
@@ -52,7 +53,7 @@
         font-weight: bold;
         margin: 0px;
         /*color: #404d3a;*/
-        color: rgba(64, 77, 58, 0.85)
+        color: rgba(8, 13, 8, 0.85)
         /*text-shadow: 1px 1px 1px #000;*/
     }
     #SuperHeaderMenu {
@@ -98,9 +99,9 @@
         background-repeat: no-repeat;
         background-color: #9cb893;
     }
-    #SuperContentsSub {
+    .SuperContentsSub {
         padding: 30px 40px 0px 40px;
-        background-color: #9cb893;
+        /*background-color: #9cb893;*/
     }
     #SuperBoxContents {
         padding: 0px 80px 0px 80px;
@@ -120,10 +121,10 @@
         line-height: 20px;
     }
 
-    #PaymentShippingEtc {
+    .PaymentShippingEtc {
         width: 800px;
     }
-    #PaymentShippingEtcTop {
+    .PaymentShippingEtcTop {
         box-sizing: border-box;
         width: 800px;
         height: 83px;
@@ -136,13 +137,13 @@
         padding-top: 0px;
         color: #a1c191;
     }
-    #PaymentShippingEtcContents {
+    .PaymentShippingEtcContents {
         width: 800px;
         background-color: #9cb893;
         font-size: 20px;
         text-align: center;
     }
-    #PaymentShippingEtcBottom {
+    .PaymentShippingEtcBottom {
         width: 800px;
         height: 53px;
         background-color: #9cb893;
@@ -190,8 +191,8 @@
 <!--        </div>-->
     </div>
     <div id="SuperContentsWrapper">
-        <div id="SuperContents">
-            <div id="SuperContentsSub">
+        <div id="SuperContents" style="/*margin-top: -50px;*/">
+            <div class="SuperContentsSub" style="position: absolute; margin-top: -200px; width: 800px; box-sizing: border-box;">
                 <h1>Welcome to my store!</h1>
                 <p>
                     <br>
@@ -199,26 +200,30 @@
                     This pendant is 100% handmade.<br>
                     <br>
                     Materials:<br>
-<!--                    <ul>-->
-<!--                        <li>&#8226; Czech beads of first grade</li>-->
-<!--                        <li>&#8226; Wood</li>-->
-<!--                    </ul>-->
+                    <!--                    <ul>-->
+                    <!--                        <li>&#8226; Czech beads of first grade</li>-->
+                    <!--                        <li>&#8226; Wood</li>-->
+                    <!--                    </ul>-->
                     &nbsp; &nbsp; &#8226; Czech beads of first grade<br>
                     &nbsp; &nbsp; &#8226; Wood<br>
                     <br>
+                </p>
+            </div>
+            <div class="SuperContentsSub">
+                <p>
                     Size of the pedant ~ 14x9,5 cm<br>
                     Lenght of the rope 50 cm + the additional rope 12 cm<br>
-                    Colour: multicolour(turquoise, blue, white, brown, golden, wooden)<br>
+                    Color: multicolor(turquoise, blue, white, brown, golden, wooden)<br>
                     I don't know how much weight, but it is heavy enought(~80gr)
-                    <p style="/*text-align: center;*/ font-size: 20px;">
-                        Design of these decorations were create by me and haven't analogs.<br>
-                        The each decoration is unique and haven't a copy.
-                    </p>
+                </p>
+                <p style="/*text-align: center;*/ font-size: 20px;">
+                    Design of these decorations were create by me and haven't analogs.<br>
+                    The each decoration is unique and haven't a copy.
                 </p>
                 <h1>Images Gallery</h1>
-<!--                <p>Here, you can have unlimited product images, please refer to-->
-<!--                    the instruction manual available in the member area for instructions-->
-<!--                    on how to add or remove product images.</p>-->
+                <!--                <p>Here, you can have unlimited product images, please refer to-->
+                <!--                    the instruction manual available in the member area for instructions-->
+                <!--                    on how to add or remove product images.</p>-->
                 <p></p>
                 <ul id="SuperThumbs">
                     <!-- Place your first set of thumbnails here -->
@@ -233,24 +238,24 @@
                 </ul>
                 <p>&nbsp;</p>
             </div>
-            <div id="PaymentShippingEtc">
-                <div id="PaymentShippingEtcTop">PAYMENT</div>
-                <div id="PaymentShippingEtcContents">
-                    <div id="SuperBoxContents">
+            <div class="PaymentShippingEtc">
+                <div class="PaymentShippingEtcTop">PAYMENT</div>
+                <div class="PaymentShippingEtcContents">
+                    <div class="SuperBoxContents">
                         I accept <i>PayPal</i> only
                     </div>
                 </div>
-                <div id="PaymentShippingEtcBottom"></div>
+                <div class="PaymentShippingEtcBottom"></div>
             </div>
 
-            <div id="PaymentShippingEtc">
-                <div id="PaymentShippingEtcTop">SHIPPING</div>
-                <div id="PaymentShippingEtcContents">
-                    <div id="SuperBoxContents">
+            <div class="PaymentShippingEtc">
+                <div class="PaymentShippingEtcTop">SHIPPING</div>
+                <div class="PaymentShippingEtcContents">
+                    <div class="SuperBoxContents">
                         Delivery is FREE to anywhere in the world
                     </div>
                 </div>
-                <div id="PaymentShippingEtcBottom"></div>
+                <div class="PaymentShippingEtcBottom"></div>
             </div>
         </div>
     </div>
