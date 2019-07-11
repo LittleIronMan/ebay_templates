@@ -1,10 +1,20 @@
 <style type="text/css">
+    /*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');*/
+    /*@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');*/
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
     #SuperWrapper {
         width: 800px;
         margin-left: auto;
         margin-right: auto;
-        font-family: arial, Helvetica, sans-serif;
-        font-size: 12px;
+        /*font-family: arial, Helvetica, sans-serif;*/
+        /*font-family: Tahoma, Geneva, sans-serif;*/
+        /*font-family: Verdana, Geneva, sans-serif;*/
+        /*font-family: 'Roboto', sans-serif;*/
+        /*font-family: 'Open Sans Condensed', sans-serif;*/
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #192118;
     }
     #SuperWrapper p {
         margin: 0px;
@@ -12,12 +22,14 @@
         line-height: 20px;
     }
     #SuperWrapper h1 {
-        padding: 5px 0px 15px 0px;
-        margin: 0px;
+        /*padding: 5px 0px 15px 0px;*/
+        margin-top: -5px;
+        margin-bottom: 0px;
         font-size: 26px;
         font-weight: bold;
-        letter-spacing: -1px;
-        color: #003366;
+        text-align: center;
+        /*letter-spacing: -1px;*/
+        color: #495937;
     }
     #SuperWrapper a {
         font-weight: bold;
@@ -30,16 +42,17 @@
     #SuperHeader {
         width:800px;
         height: 240px;
-        background-image:url("new_img/title_original.jpg");
+        background-image:url("https://d.radikal.ru/d26/1907/5b/4236612afa3b.jpg");
     }
     #SuperHeaderLogo {
-        padding: 30px 0px 83px 80px;
-        font-family: arial, Helvetica, sans-serif;
+        padding: 25px 0px 83px 80px;
+        font-family: 'Open Sans', sans-serif;
         font-size: 48px;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         font-weight: bold;
         margin: 0px;
-        color: #404d3a;
+        /*color: #404d3a;*/
+        color: rgba(64, 77, 58, 0.85)
         /*text-shadow: 1px 1px 1px #000;*/
     }
     #SuperHeaderMenu {
@@ -89,16 +102,6 @@
         padding: 30px 40px 0px 40px;
         background-color: #9cb893;
     }
-    #SuperFooter {
-        width: 800px;
-        height: 44px;
-        background-image:url('https://www.superauctiontemplate.com/freebaytemplate/productimages/GeneralShopping11/HTML/images/Footer.jpg');
-    }
-    #SuperFooterLink {
-        width: 800px;
-        background-image:url('https://www.superauctiontemplate.com/freebaytemplate/productimages/GeneralShopping11/HTML/images/BG.jpg');
-        height: 100px;
-    }
     #SuperBoxContents {
         padding: 0px 80px 0px 80px;
         margin: 0px;
@@ -117,85 +120,34 @@
         line-height: 20px;
     }
 
-    #SuperPayment {
+    #PaymentShippingEtc {
         width: 800px;
     }
-    #SuperPaymentTop {
+    #PaymentShippingEtcTop {
         box-sizing: border-box;
         width: 800px;
         height: 83px;
-        background-image:url('new_img/flag.png');
-        font-family: arial, Helvetica, sans-serif;
+        background-image:url('https://c.radikal.ru/c07/1907/27/a8ca8e6b5794.png');
+        font-family: 'Open Sans', sans-serif;
         font-size: 40px;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         font-weight: bold;
         text-align: center;
-        padding-top: 10px;
-        color: #7e9971;
+        padding-top: 0px;
+        color: #a1c191;
     }
-    #SuperPaymentContents {
+    #PaymentShippingEtcContents {
         width: 800px;
         background-color: #9cb893;
+        font-size: 20px;
+        text-align: center;
     }
-    #SuperPaymentBottom {
+    #PaymentShippingEtcBottom {
         width: 800px;
         height: 53px;
         background-color: #9cb893;
     }
 
-    #SuperShipping {
-        width: 800px;
-    }
-    #SuperShippingTop {
-        width: 800px;
-        height: 83px;
-        background-image: url('new_img/flag.png');
-    }
-    #SuperShippingContents {
-        width: 800px;
-        background-color: #9cb893;
-    }
-    #SuperShippingBottom {
-        width: 800px;
-        height: 53px;
-        background-color: #9cb893;
-    }
-
-    #SuperContacts {
-        width: 800px;
-    }
-    #SuperContactsTop {
-        width: 800px;
-        height: 83px;
-        background-image:url('new_img/flag.png');
-    }
-    #SuperContactsContents {
-        width: 800px;
-        background-color: #9cb893;
-    }
-    #SuperContactsBottom {
-        width: 800px;
-        height: 53px;
-        background-color: #9cb893;
-    }
-
-    #SuperReturns {
-        width: 800px;
-    }
-    #SuperReturnsTop {
-        width: 800px;
-        height: 83px;
-        background-image:url('new_img/flag.png');
-    }
-    #SuperReturnsContents {
-        width: 800px;
-        background-color: #9cb893;
-    }
-    #SuperReturnsBottom {
-        width: 800px;
-        height: 53px;
-        background-color: #9cb893;
-    }
     /* HTML5 ELEMENTS */
     /* sub images > thumbnail list */
     ul#SuperThumbs, ul#SuperThumbs li {
@@ -240,116 +192,66 @@
     <div id="SuperContentsWrapper">
         <div id="SuperContents">
             <div id="SuperContentsSub">
-                <h1>SuperAuctionTemplate Super Charge Your eBay Sales!</h1>
-                <p><strong>Nunc pellentesque blandit lectus,</strong> at semper
-                    massa sodales vel. Mauris varius felis ac metus molestie id viverra
-                    sem venenatis. Duis lobortis, mi vel cursus aliquam, nibh nisi vestibulum
-                    lectus, vitae varius libero est eu eros. Curabitur gravida, odio
-                    id pharetra sollicitudin, erat nisl vulputate nibh, a ullamcorper
-                    orci ante vel ligula. <a href="#">Hyperlink test</a>.</p>
-                <h1>Product Images Gallery</h1>
-                <p>Here, you can have unlimited product images, please refer to
-                    the instruction manual available in the member area for instructions
-                    on how to add or remove product images.</p>
+                <h1>Welcome to my store!</h1>
+                <p>
+                    <br>
+                    Hi :) I'm Elya! And I make a decorations by myself hand with love &#10084;<br>
+                    This pendant is 100% handmade.<br>
+                    <br>
+                    Materials:<br>
+<!--                    <ul>-->
+<!--                        <li>&#8226; Czech beads of first grade</li>-->
+<!--                        <li>&#8226; Wood</li>-->
+<!--                    </ul>-->
+                    &nbsp; &nbsp; &#8226; Czech beads of first grade<br>
+                    &nbsp; &nbsp; &#8226; Wood<br>
+                    <br>
+                    Size of the pedant ~ 14x9,5 cm<br>
+                    Lenght of the rope 50 cm + the additional rope 12 cm<br>
+                    Colour: multicolour(turquoise, blue, white, brown, golden, wooden)<br>
+                    I don't know how much weight, but it is heavy enought(~80gr)
+                    <p style="/*text-align: center;*/ font-size: 20px;">
+                        Design of these decorations were create by me and haven't analogs.<br>
+                        The each decoration is unique and haven't a copy.
+                    </p>
+                </p>
+                <h1>Images Gallery</h1>
+<!--                <p>Here, you can have unlimited product images, please refer to-->
+<!--                    the instruction manual available in the member area for instructions-->
+<!--                    on how to add or remove product images.</p>-->
                 <p></p>
                 <ul id="SuperThumbs">
                     <!-- Place your first set of thumbnails here -->
-                    <li><div href="#" style="background-image: url('new_img/56.jpg');"/></li>
-                    <li><div href="#" style="background-image: url('new_img/57.jpg');"/></li>
-                    <li style="width: 100%; height: 780px"><div href="#" style="background-image: url('new_img/32.jpg');"/></li>
-                    <li style="width: 100%; height: 530px"><div href="#" style="background-image: url('new_img/33.jpg');"/></li>
+                    <li><div href="#" style="background-image: url('https://d.radikal.ru/d39/1907/8c/90bce2acb19f.jpg');"/></li>
+                    <li><div href="#" style="background-image: url('https://a.radikal.ru/a33/1907/de/4c138f6f6bad.jpg');"/></li>
+                    <li style="width: 100%; height: 780px"><div href="#" style="background-image: url('https://c.radikal.ru/c33/1907/df/d152127e536a.jpg');"/></li>
+                    <li style="width: 100%; height: 530px"><div href="#" style="background-image: url('https://d.radikal.ru/d02/1907/3b/d07406a61543.jpg');"/></li>
                     <!--li><div href="#" style="background-image: url('img_x0.5/img_14.webp');"/></li>
                     <li><div href="#" style="background-image: url('img_x0.5/img_15.webp');"/></li>
                     <li><div href="#" style="background-image: url('img_x0.5/img_16.webp');"/></li>
                     <li><div href="#" style="background-image: url('img_x0.5/img_17.webp');"/></li-->
                 </ul>
-                <p></p>
-                <p>You may even add more contents here, perhaps some notes about actual product might be different than what is shown above.</p>
+                <p>&nbsp;</p>
             </div>
-            <div id="SuperPayment">
-                <div id="SuperPaymentTop">PAYMENT</div>
-                <div id="SuperPaymentContents">
+            <div id="PaymentShippingEtc">
+                <div id="PaymentShippingEtcTop">PAYMENT</div>
+                <div id="PaymentShippingEtcContents">
                     <div id="SuperBoxContents">
-                        <p>Nunc pellentesque blandit lectus, at semper massa sodales
-                            vel. <a href="#">Hyperlink test</a></p>
-                        <p>Mauris varius felis ac metus molestie id viverra sem
-                            venenatis. Duis lobortis, mi vel cursus aliquam, nibh nisi
-                            vestibulum lectus, vitae varius libero est eu eros.</p>
-                        <ul>
-                            <li>Vitae varius libero est eu eros. </li>
-                            <li>Curabitur gravida, odio id pharetra sollicitudin,
-                                erat nisl vulputate nibh. </li>
-                            <li>A ullamcorper orci ante vel ligula. Etiam facilisis,
-                                justo vitae iaculis condimentum. </li>
-                        </ul>
+                        I accept <i>PayPal</i> only
                     </div>
                 </div>
-                <div id="SuperPaymentBottom"></div>
+                <div id="PaymentShippingEtcBottom"></div>
             </div>
 
-            <div id="SuperShipping">
-                <div id="SuperShippingTop"></div>
-                <div id="SuperShippingContents">
+            <div id="PaymentShippingEtc">
+                <div id="PaymentShippingEtcTop">SHIPPING</div>
+                <div id="PaymentShippingEtcContents">
                     <div id="SuperBoxContents">
-                        <p>Nunc pellentesque blandit lectus, at semper massa sodales
-                            vel. <a href="#">Hyperlink test</a></p>
-                        <ul>
-                            <li>Vitae varius libero est eu eros. </li>
-                            <li>Curabitur gravida, odio id pharetra sollicitudin,
-                                erat nisl vulputate nibh. </li>
-                            <li>A ullamcorper orci ante vel ligula. Etiam facilisis,
-                                justo vitae iaculis condimentum. </li>
-                        </ul>
+                        Delivery is FREE to anywhere in the world
                     </div>
                 </div>
-                <div id="SuperShippingBottom"></div>
+                <div id="PaymentShippingEtcBottom"></div>
             </div>
-
-            <div id="SuperContacts">
-                <div id="SuperContactsTop"></div>
-                <div id="SuperContactsContents">
-                    <div id="SuperBoxContents">
-                        <p>Nunc pellentesque blandit lectus, at semper massa sodales
-                            vel. <a href="#">Hyperlink test</a></p>
-                        <ul>
-                            <li>Vitae varius libero est eu eros. </li>
-                            <li>Curabitur gravida, odio id pharetra sollicitudin,
-                                erat nisl vulputate nibh. </li>
-                            <li>A ullamcorper orci ante vel ligula. Etiam facilisis,
-                                justo vitae iaculis condimentum. </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="SuperContactsBottom"></div>
-            </div>
-
-            <div id="SuperReturns">
-                <div id="SuperReturnsTop"></div>
-                <div id="SuperReturnsContents">
-                    <div id="SuperBoxContents">
-                        <p>Nunc pellentesque blandit lectus, at semper massa sodales
-                            vel. <a href="#">Hyperlink test</a></p>
-                        <ul>
-                            <li>Vitae varius libero est eu eros. </li>
-                            <li>Curabitur gravida, odio id pharetra sollicitudin,
-                                erat nisl vulputate nibh. </li>
-                            <li>A ullamcorper orci ante vel ligula. Etiam facilisis,
-                                justo vitae iaculis condimentum. </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="SuperReturnsBottom"></div>
-            </div>
-
         </div>
     </div>
-    <div id="SuperFooter"></div>
-    <div id="SuperFooterLink">
-        <p align="center">
-            <a target="_blank" href="https://www.superauctiontemplate.com">
-                <img src="https://www.superauctiontemplate.com/freebaytemplate/productimages/GeneralShopping11/HTML/images/FooterLink.jpg" border="0">
-            </a>
-        </p>
-    </div>
-
 </div>
